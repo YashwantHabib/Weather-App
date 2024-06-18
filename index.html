@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div id="main_container" >
+        <div id="current_weather_container">
+            <div id="title"><h1>Weather</h1> <img id="srchIcn" src="https://cdn-icons-png.flaticon.com/128/9533/9533076.png?ga=GA1.1.900469489.1682664633&semt=ais" alt=""></div>
+            <div id="date_location">
+                <p id="currentDate">Today, 16 Dec</p>
+                <p id="currentLocation">Dhaka, Bangladesh</p>
+            </div>
+            <div id="currentData" class="greys">
+                <div id="timeTempDescpIcn">
+                    <div id="timeTempDesc">
+                        <p id="currentTime">12:35 PM</p>
+                        <p id="currentTemp">26 &deg;C</p>
+                        <p id="currentDescp">Cloudy</p>
+                    </div>
+                    <div id="currentIcn">
+                        <img id="weatherIcn" src="" alt="">
+                    </div>
+                </div>
+                <div id="windHumidPress">
+                    <div id="windContainer">
+                        <p>Wind</p>
+                        <p id="windVal" class="valText">14Km/h</p>
+                    </div>
+                    <hr>
+                    <div id="humidityContainer">
+                        <p>Humidity</p>
+                        <p id="humidVal" class="valText">90%</p>
+                    </div>
+                    <hr>
+                    <div id="pressureContainer">
+                        <p>Pressure</p>
+                        <p id="pressVal" class="valText">1620hPa</p>
+                    </div>
+                </div>
+            </div>
+            <div id="todayTmrwContainer">
+                <p id="today" class="daySelected">18 hour forecast</p>
+                <div id="daysForecastParent">
+                <div id="daysForecastContainer">
+                    <div class="daysForecast" id="daysForecast1">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                    <div class="daysForecast" id="daysForecast2">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                    <div class="daysForecast" id="daysForecast3">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                    <div class="daysForecast" id="daysForecast4">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                    <div class="daysForecast" id="daysForecast5">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                    <div class="daysForecast" id="daysForecast6">
+                        <p class="daysTime">12:00</p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/5828/5828468.png?ga=GA1.1.900469489.1682664633" alt="" class="daysIcn">
+                        <p class="daysTemp">30&deg;</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="location_container" >
+            <form action="" autocomplete="off"><input type="text" name="searchBar" id="searchBar" placeholder="Search location here"><img id="cancelIcn" src="https://cdn-icons-png.flaticon.com/128/9470/9470716.png?ga=GA1.1.900469489.1682664633&semt=ais" alt=""></form>
+            <div id="gpsContainer"> <p id="gps"><img src="https://cdn-icons-png.flaticon.com/128/3177/3177361.png?ga=GA1.1.900469489.1682664633&semt=ais" alt="">Location</p> </div>
+            <div id="placesParent">
+            <div id="placesContainer">
+                
+            </div>
+            </div>
+            <div id="searchContainer">
+
+            </div>
+        </div>
+        <div id="forecast_container" >
+            <div>
+                <h2 id="forecastHead">5 days Forecast</h2>
+            </div>
+            <div id="forecasts">
+                <div class="forecast">
+                        <div>
+                            <p class="forecastDay">14 ,Feb</p>
+                            <p class="forecastTime">3:00 PM</p>
+                        </div>
+                    <p class="forecastTemp">26&deg;</p>
+                    <img class="forecastIcn" src="https://cdn-icons-png.flaticon.com/128/5825/5825998.png?ga=GA1.1.900469489.1682664633" alt="">
+                </div>
+                <div class="forecast">
+                    <div>
+                        <p class="forecastDay">14 ,Feb</p>
+                        <p class="forecastTime">3:00 PM</p>
+                    </div>
+                    <p class="forecastTemp">26&deg;</p>
+                    <img class="forecastIcn" src="https://cdn-icons-png.flaticon.com/128/5825/5825998.png?ga=GA1.1.900469489.1682664633" alt="">
+                </div>
+                <div class="forecast">
+                    <div>
+                        <p class="forecastDay">14 ,Feb</p>
+                        <p class="forecastTime">3:00 PM</p>
+                    </div>
+                    <p class="forecastTemp">26&deg;</p>
+                    <img class="forecastIcn" src="https://cdn-icons-png.flaticon.com/128/5825/5825998.png?ga=GA1.1.900469489.1682664633" alt="">
+                </div>
+                <div class="forecast">
+                    <div>
+                        <p class="forecastDay">14 ,Feb</p>
+                        <p class="forecastTime">3:00 PM</p>
+                    </div>
+                    <p class="forecastTemp">26&deg;</p>
+                    <img class="forecastIcn" src="https://cdn-icons-png.flaticon.com/128/5825/5825998.png?ga=GA1.1.900469489.1682664633" alt="">
+                </div>
+                <div class="forecast">
+                    <div>
+                        <p class="forecastDay">14 ,Feb</p>
+                        <p class="forecastTime">3:00 PM</p>
+                    </div>
+                    <p class="forecastTemp">26&deg;</p>
+                    <img class="forecastIcn" src="https://cdn-icons-png.flaticon.com/128/5825/5825998.png?ga=GA1.1.900469489.1682664633" alt="">
+                </div>
+            </div>
+            <div id="poweredBy">
+                <p>Powered By <img src="https://openweathermap.org/themes/openweathermap/assets/img/mobile_app/android-app-top-banner.png" alt="" height="50px"> OpenWeatherMap</p>
+                <p><a target="_blank" href="https://www.linkedin.com/in/yashwant-habib-a11a94291/?originalSubdomain=in">@Yashwant Habib</a> <img width="20px" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png?ga=GA1.1.900469489.1682664633&semt=ais" alt=""></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="wthr.js"></script>
+</body>
+</html>

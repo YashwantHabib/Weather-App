@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#srchIcn{
+    display: none;
+}
+#title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#srchIcn{
+    background-color: skyblue;
+    padding: 5px;
+    width: 20px;
+    border-radius: 1em;
+}
+#srchIcn:hover{
+    cursor: pointer;
+}
+header input{
+    height: 50%;
+    width: 25vw;
+}
+h1{
+    display: inline;
+}
+.greys{
+    background-color: rgb(246, 246, 246);
+    padding: 1rem;
+    border-radius: 1em;
+    border: 2px dashed;
+}
+#currentDate , #currentLocation{
+    margin: 0;
+}
+#main_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2em;
+}
+#currentLocation{
+    font-size: 1.4em;
+}
+#timeTempDescpIcn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#currentTemp{
+    font-size: 2em;
+}
+#windHumidPress{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.valText{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#todayTmrw{
+    text-align: center;
+    align-items: end;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.daySelected{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#daysForecastContainer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+}
+.daysForecast{
+    background-color: rgb(247, 247, 247);
+    border-radius: 1em;
+    border: 2px dashed;
+}
+.daysForecast img{
+    width: 20px;
+}
+#location_container{
+    margin-top: 2em;
+    width: 100%;
+}
+#searchBar{
+    width: 80%;
+    height: 2em;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    outline: none;
+}
+#cancelIcn{
+    display: none;
+    width: 2.5em;
+    margin: 8px;
+    float: right;
+}
+#gps{
+    background-color: darkseagreen;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    display: flex;
+    text-align: end;
+    align-items: center;
+}
+#gps:hover{
+    cursor: pointer;
+}
+#gps img{
+    width: 10px;
+}
+#placesParent{
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+#placesContainer{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+.yellows{
+    background-color: rgb(255, 244, 176);
+    border-radius: 1em;
+    border: 1px solid;
+    display: flex;
+    width: 10em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.placeTemp{
+    font-size: 1.6em;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+}
+.placeTempIcn{
+    width: 100px;
+}
+.placeName{
+    font-weight: bold;
+}
+#forecastHead{
+    margin-top: 2em;
+    text-align: center;
+}
+
+.forecast{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(195, 255, 135);
+    border-radius: 1em;
+    border: 2px dashed;
+    margin-bottom: 1em;
+}
+.forecastIcn{
+    width: 50px;
+    height: 50px;
+}
+.forecastTemp{
+    font-size: 2em;
+}
+#poweredBy p{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+@media only screen and (max-width: 700px) {
+    #main_container{
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    #location_container{
+        display: none;
+    }
+    #srchIcn{
+        display: inline;
+    }
+    #cancelIcn{
+        display: inline;
+    }
+    #searchBar{
+        width: 75%;
+    }
+    .yellows{
+        padding: 2em;
+    }
+    #location_container{
+        margin-top: 1em;
+    }
+    #poweredBy p{
+        justify-content: center;
+    }
+}
